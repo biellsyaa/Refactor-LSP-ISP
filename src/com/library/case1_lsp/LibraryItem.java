@@ -7,7 +7,7 @@ public class LibraryItem {
         this.title = title;
     }
 
-    public void borrow() {
-        System.out.println(title + " has been borrowed.");
+    public String getTitle() {
+        return title;
     }
 }

@@ -1,6 +1,6 @@
 package com.library.case1_lsp;
 
-public class BorrowableBook extends LibraryItem {
+public class BorrowableBook extends LibraryItem implements Borrowable {
 
     public BorrowableBook(String title) {
         super(title);
