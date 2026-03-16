@@ -5,12 +5,12 @@ import com.library.case1_lsp.BorrowableBook;
 import com.library.case1_lsp.LibraryItem;
 import com.library.case1_lsp.ReferenceBook;
 
-// import com.library.case2_isp.EmailNotification;
-// import com.library.case2_isp.EmailSender;
-// import com.library.case2_isp.PushNotification;
-// import com.library.case2_isp.PushSender;
-// import com.library.case2_isp.SMSNotification;
-// import com.library.case2_isp.SmsSender;
+import com.library.case2_isp.EmailNotification;
+import com.library.case2_isp.EmailSender;
+import com.library.case2_isp.PushNotification;
+import com.library.case2_isp.PushSender;
+import com.library.case2_isp.SMSNotification;
+import com.library.case2_isp.SmsSender;
 
 // import com.library.case3_isp.AdvancedOfficeMachine;
 // import com.library.case3_isp.BasicPrinter;
@@ -33,15 +33,15 @@ public class Main {
 
         System.out.println(item2.getTitle() + " is a reference book and cannot be borrowed.");
 
-        // System.out.println("\n=== CASE 2: ISP AFTER REFACTOR ===");
-        // EmailSender emailSender = new EmailNotification();
-        // emailSender.sendEmail("Welcome to the library!");
+        System.out.println("\n=== CASE 2: ISP AFTER REFACTOR ===");
+        EmailSender emailSender = new EmailNotification();
+        emailSender.sendEmail("Welcome to the library!");
 
-        // SmsSender smsSender = new SMSNotification();
-        // smsSender.sendSMS("Your borrowed book is due tomorrow.");
+        SmsSender smsSender = new SMSNotification();
+        smsSender.sendSMS("Your borrowed book is due tomorrow.");
 
-        // PushSender pushSender = new PushNotification();
-        // pushSender.sendPushNotification("A new book has been added to the catalog.");
+        PushSender pushSender = new PushNotification();
+        pushSender.sendPushNotification("A new book has been added to the catalog.");
 
         // System.out.println("\n=== CASE 3: ISP AFTER REFACTOR ===");
         // Printer basicPrinter = new BasicPrinter();
