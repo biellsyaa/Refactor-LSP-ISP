@@ -1,6 +1,6 @@
 package com.library.case3_isp;
 
-public class AdvancedOfficeMachine implements MultiFunctionMachine {
+public class AdvancedOfficeMachine implements Printer, Scanner, Fax {
 
     @Override
     public void print(String document) {
