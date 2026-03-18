@@ -12,12 +12,6 @@ import com.library.case2_isp.PushSender;
 import com.library.case2_isp.SMSNotification;
 import com.library.case2_isp.SmsSender;
 
-// import com.library.case3_isp.AdvancedOfficeMachine;
-// import com.library.case3_isp.BasicPrinter;
-// import com.library.case3_isp.Fax;
-// import com.library.case3_isp.Printer;
-// import com.library.case3_isp.Scanner;
-
 public class Main {
     public static void main(String[] args) {
         System.out.println("=== CASE 1: LSP AFTER REFACTOR ===");
@@ -42,22 +36,5 @@ public class Main {
 
         PushSender pushSender = new PushNotification();
         pushSender.sendPushNotification("A new book has been added to the catalog.");
-
-        // System.out.println("\n=== CASE 3: ISP AFTER REFACTOR ===");
-        // Printer basicPrinter = new BasicPrinter();
-        // basicPrinter.print("Library Report");
-
-        // AdvancedOfficeMachine officeMachine = new AdvancedOfficeMachine();
-        // officeMachine.print("Monthly Summary");
-        // officeMachine.scan("Borrowing Form");
-        // officeMachine.fax("Urgent Notice");
-
-        // Printer printer = officeMachine;
-        // Scanner scanner = officeMachine;
-        // Fax fax = officeMachine;
-
-        // printer.print("Inventory Report");
-        // scanner.scan("Student ID Card");
-        // fax.fax("Official Memo");
     }
 }
